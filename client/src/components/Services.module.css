@@ -1,0 +1,29 @@
+.services {
+  padding: 4rem 0;
+}
+
+.serviceList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.serviceItem {
+  flex-basis: calc(33.333% - 2rem);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.serviceItem:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .serviceItem {
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"name": "design-tech-portfolio",
+	"version": "1.0.0",
+	"description": "Design Tech Portfolio Website",
+	"main": "index.js",
+	"scripts": {
+		"start": "pnpm run --parallel start:server start:client",
+		"start:server": "cd server && pnpm start",
+		"start:client": "cd client && pnpm start",
+		"install:all": "pnpm install && pnpm -C server install && pnpm -C client install",
+		"build": "cd client && pnpm run build",
+		"start:prod": "cd client && pnpm run build && cd ../server && pnpm start",
+		"deploy": "cd client && pnpm run deploy"
+	},
+	"keywords": ["portfolio", "design", "tech"],
+	"author": "Your Name",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}

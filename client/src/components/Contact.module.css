@@ -1,0 +1,41 @@
+.contact {
+  padding: 100px 0 4rem; /* 增加顶部 padding */
+}
+
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 0 3rem; /* 在移动设备上调整顶部 padding */
+  }
+
+  .contactForm {
+    padding: 0 1rem;
+  }
+}
