@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios'; // 注释掉这行，或者完全删除
 import styles from './Contact.module.css';
 
 function Contact() {
